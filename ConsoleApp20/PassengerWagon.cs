@@ -31,6 +31,11 @@ namespace TrainWagons
             Seats = seats;
         }
 
+        public PassengerWagon(int i, int minSpeed1, string s)
+        {
+            throw new NotImplementedException();
+        }
+
         public override void Show() =>
             Console.WriteLine($"Пассажирский вагон №{Number}, Максимальная скорость: {MinSpeed} км/ч, Спальных мест: {SleepingPlaces}, Сидячих мест: {Seats}");
 
