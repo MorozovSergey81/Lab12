@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+        <AssemblyName>TestProject6</AssemblyName>
+        <RootNamespace>TestProject6</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="coverlet.collector" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
+        <PackageReference Include="MSTest.TestAdapter" Version="3.1.1"/>
+        <PackageReference Include="MSTest.TestFramework" Version="3.1.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ConsoleApp20\ConsoleApp20.csproj" />
+      <ProjectReference Include="..\TestProject2\TestProject2.csproj" />
+      <ProjectReference Include="..\TestProject4\TestProject4.csproj" />
+      <ProjectReference Include="..\TestProject5\TestProject5.csproj" />
+    </ItemGroup>
+
+</Project>

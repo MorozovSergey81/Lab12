@@ -33,6 +33,8 @@ namespace TrainWagons
             Tonnage = tonnage;
         }
 
+        
+
         public override void Show() =>
             Console.WriteLine(
                 $"Грузовой вагон №{Number}, Максимальная скорость: {MinSpeed} км/ч, Назначение: {Target}, Тоннаж: {Tonnage}");
