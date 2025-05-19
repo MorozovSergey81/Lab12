@@ -20,7 +20,7 @@ public class DoublyLinkedListTests
         Console.SetOut(output);
         list.Print();
         var lines = output.ToString().Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries);
-        Assert.AreEqual(k, lines.Length);
+        Assert.AreEqual(k, lines.Length); // Должно быть 3 элемента
         StringAssert.Contains(lines[0], "Список пуст");
         
     }
@@ -32,7 +32,7 @@ public class DoublyLinkedListTests
         Console.SetOut(output);
         list.Print();
         var lines = output.ToString().Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries);
-        Assert.AreEqual(1, lines.Length);
+        Assert.AreEqual(1, lines.Length); // Должен быть 1 элемент
         StringAssert.Contains(lines[0], "Список пуст");
     }
 

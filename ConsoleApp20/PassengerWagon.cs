@@ -31,7 +31,7 @@ namespace TrainWagons
             Seats = seats;
         }
 
-        public PassengerWagon(int i, int minSpeed1, int s)
+        public PassengerWagon(int i, int minSpeed1, string s)
         {
             throw new NotImplementedException();
         }

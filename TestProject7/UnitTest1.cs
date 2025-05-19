@@ -5,7 +5,6 @@ namespace TestProject6;
 [TestClass]
 public class MyCollectionTests
 {
-    // Класс-заглушка для Wagon, реализующий ICloneable
     private class TestWagon : ICloneable
     {
         public int Number { get; set; }
@@ -235,7 +234,7 @@ public class MyCollectionTests
     [TestMethod]
     public void Resize_HandlesCollisionsCorrectly()
     {
-        var collection = new MyCollection<int, TestWagon>(2); // Маленький размер для проверки коллизий
+        var collection = new MyCollection<int, TestWagon>(2);
         collection.Add(1, new TestWagon(1, 100));
         collection.Add(2, new TestWagon(2, 200));
         collection.Add(3, new TestWagon(3, 300));
